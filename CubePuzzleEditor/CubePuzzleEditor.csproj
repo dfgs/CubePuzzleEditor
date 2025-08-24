@@ -8,4 +8,13 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+		<ProjectReference Include="..\..\BlueprintLib\BlueprintLib\BlueprintLib.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+		<ProjectReference Include="..\..\DataModelLib\DataModelLib\DataModelLib.csproj" />
+    <ProjectReference Include="..\..\DataViewModelLib\DataViewModelLib\DataViewModelLib.csproj" />
+    <ProjectReference Include="..\CubePuzzleLib\CubePuzzleLib.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\..\DataViewModelLib\DataViewModelLib.Shared\DataViewModelLib.Shared.projitems" Label="Shared" />
+
 </Project>

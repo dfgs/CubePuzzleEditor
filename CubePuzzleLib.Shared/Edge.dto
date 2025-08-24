@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<DTO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+  <Properties>
+    <PropertyDefinition Name="EdgeID" TypeName="byte">
+			<Attributes>
+				<AttributeDefinition Name="Column"/>
+				<AttributeDefinition Name="PrimaryKey"/>
+			</Attributes>
+		</PropertyDefinition>
+		<PropertyDefinition Name="Name" TypeName="string">
+			<Attributes>
+				<AttributeDefinition Name="Column"/>
+			</Attributes>
+		</PropertyDefinition>
+		<PropertyDefinition Name="CubeID" TypeName="byte">
+			<Attributes>
+				<AttributeDefinition Name="Column"/>
+				<AttributeDefinition Name="ForeignKey">
+					<Parameters>
+						<AttributeParameterDefinition Name="ForeignPropertyName" Value="Cube" />
+						<AttributeParameterDefinition Name="PrimaryPropertyName" Value="Edges" />
+						<AttributeParameterDefinition Name="PrimaryTable" Value="Cube" />
+						<AttributeParameterDefinition Name="PrimaryKey" Value="CubeID" />
+						<AttributeParameterDefinition Name="CascadeTrigger" Value="CascadeTriggers.Delete" IsString="false" />
+					</Parameters>
+				</AttributeDefinition>
+			</Attributes>
+		</PropertyDefinition>
+		
+	</Properties>
+</DTO>

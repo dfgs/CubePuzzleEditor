@@ -9,5 +9,10 @@
     <Import_RootNamespace>CubePuzzleLib.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)Puzzle.dto" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)Edge.dto" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)FaceEdge.dto" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)Face.dto" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)Cube.dto" />
   </ItemGroup>
 </Project>
