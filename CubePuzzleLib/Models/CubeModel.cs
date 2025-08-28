@@ -8,7 +8,7 @@ using DataModelLib;
 
 namespace CubePuzzleLib.Models
 {
-	[DTO("Cube"),  Blueprint("TableModel")]
+	[TableModel, DTO("Cube"),  Blueprint("TableModel")]
 	public partial class CubeModel
 	{
 		

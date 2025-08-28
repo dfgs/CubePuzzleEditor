@@ -8,12 +8,12 @@ using DataModelLib;
 
 namespace CubePuzzleLib.Models
 {
-	[DTO("Edge"),  Blueprint("TableModel")]
+	[TableModel, DTO("Edge"),  Blueprint("TableModel")]
 	public partial class EdgeModel
 	{
 		public IEnumerable<FaceModel> GetFaces()
 		{
-			return this.GetFaceEdges().Select(item => item.GetFace());
+			return this.GetE_FaceEdges().Select(item => item.GetFace());
 		}
 	}
 }

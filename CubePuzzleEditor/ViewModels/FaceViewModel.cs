@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BlueprintLib.Attributes;
-using DataModelLib;
+using DataViewModelLib;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[DTO("Face"),   Blueprint("TableViewModel")]
+	[TableViewModel, DTO("Face"),   Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models")]
 	public partial class FaceViewModel
 	{
 		/*public IEnumerable<EdgeModel> GetEdges()

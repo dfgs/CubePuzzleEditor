@@ -14,7 +14,7 @@
 				<AttributeDefinition Name="ForeignKey">
 					<Parameters>
 						<AttributeParameterDefinition Name="ForeignPropertyName" Value="Face" />
-						<AttributeParameterDefinition Name="PrimaryPropertyName" Value="FaceEdges" />
+						<AttributeParameterDefinition Name="PrimaryPropertyName" Value="F_FaceEdges" />
 						<AttributeParameterDefinition Name="PrimaryTable" Value="Face" />
 						<AttributeParameterDefinition Name="PrimaryKey" Value="FaceID" />
 						<AttributeParameterDefinition Name="CascadeTrigger" Value="CascadeTriggers.Delete" IsString="false" />
@@ -28,7 +28,7 @@
 				<AttributeDefinition Name="ForeignKey">
 					<Parameters>
 						<AttributeParameterDefinition Name="ForeignPropertyName" Value="Edge" />
-						<AttributeParameterDefinition Name="PrimaryPropertyName" Value="FaceEdges" />
+						<AttributeParameterDefinition Name="PrimaryPropertyName" Value="E_FaceEdges" />
 						<AttributeParameterDefinition Name="PrimaryTable" Value="Edge" />
 						<AttributeParameterDefinition Name="PrimaryKey" Value="EdgeID" />
 						<AttributeParameterDefinition Name="CascadeTrigger" Value="CascadeTriggers.Delete" IsString="false" />

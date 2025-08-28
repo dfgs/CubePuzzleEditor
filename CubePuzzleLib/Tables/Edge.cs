@@ -1,9 +1,10 @@
 ﻿using BlueprintLib.Attributes;
 using DataModelLib;
+using DataLib;
 
-namespace CubePuzzleLib
+namespace CubePuzzleLib.Tables
 {
-	[DTO("Edge"), Table, Blueprint("DTO")]
+	[Table, DTO("Edge"), Blueprint("Table")]
 	public partial class Edge
 	{
 

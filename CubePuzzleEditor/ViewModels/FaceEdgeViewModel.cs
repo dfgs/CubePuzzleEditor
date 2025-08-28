@@ -1,14 +1,15 @@
-﻿using System;
+﻿using BlueprintLib.Attributes;
+using DataModelLib;
+using DataViewModelLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BlueprintLib.Attributes;
-using DataModelLib;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[DTO("FaceEdge"),  Blueprint("TableViewModel")]
+	[TableViewModel, DTO("FaceEdge"),  Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models")]
 	public partial class FaceEdgeViewModel
 	{
 		

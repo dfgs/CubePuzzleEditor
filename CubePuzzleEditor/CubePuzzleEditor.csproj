@@ -17,4 +17,6 @@
 
   <Import Project="..\..\DataViewModelLib\DataViewModelLib.Shared\DataViewModelLib.Shared.projitems" Label="Shared" />
 
+  <Import Project="..\CubePuzzleLib.Shared\CubePuzzleLib.Shared.projitems" Label="Shared" />
+
 </Project>

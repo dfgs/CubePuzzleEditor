@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BlueprintLib.Attributes;
-using DataModelLib;
+using DataViewModelLib;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[ DTO("Puzzle"),  Blueprint("DatabaseViewModel")]
+	[DatabaseViewModel, DTO("Puzzle"), Blueprint("DatabaseViewModel"), Blueprint("RelationViewModelCollection"), Using("CubePuzzleLib.Models")]
 	public partial class PuzzleViewModel
 	{
 		
