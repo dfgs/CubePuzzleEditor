@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[TableViewModel, DTO("Edge"),  Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models")]
+	[TableViewModel, DTO("Edge"),  Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models"), Using("CubePuzzleLib.Tables")]
 	public partial class EdgeViewModel
 	{
-		/*public IEnumerable<FaceModel> GetFaces()
+		public IEnumerable<FaceViewModel> Faces()
 		{
-			return this.GetFaceEdges().Select(item => item.GetFace());
-		}*/
+			return this.E_FaceEdges.Select(item => item.Face);
+		}
 	}
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[TableViewModel, DTO("FaceEdge"),  Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models")]
+	[TableViewModel, DTO("FaceEdge"),  Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models"), Using("CubePuzzleLib.Tables")]
 	public partial class FaceEdgeViewModel
 	{
 		

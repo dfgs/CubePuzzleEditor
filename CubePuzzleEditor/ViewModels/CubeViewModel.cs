@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[TableViewModel, DTO("Cube"), Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models")]
+	[TableViewModel, DTO("Cube"), Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models"), Using("CubePuzzleLib.Tables")]
 	public partial class CubeViewModel
 	{
 		

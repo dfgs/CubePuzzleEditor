@@ -8,12 +8,12 @@ using DataViewModelLib;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[TableViewModel, DTO("Face"),   Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models")]
+	[TableViewModel, DTO("Face"),   Blueprint("TableViewModel"), Blueprint("TableViewModelCollection"), Using("CubePuzzleLib.Models"), Using("CubePuzzleLib.Tables")]
 	public partial class FaceViewModel
 	{
-		/*public IEnumerable<EdgeModel> GetEdges()
+		public IEnumerable<EdgeViewModel> Edges()
 		{
-			return this.GetFaceEdges().Select(item => item.GetEdge());
-		}*/
+			return this.F_FaceEdges.Select(item => item.Edge);
+		}
 	}
 }

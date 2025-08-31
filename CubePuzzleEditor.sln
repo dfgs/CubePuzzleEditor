@@ -25,6 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLib", "..\DataLib\DataL
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DataLib.Shared", "..\DataLib\DataLib.Shared\DataLib.Shared.shproj", "{473520F0-FA49-46C7-8C85-A13DF0434B36}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-UnitTests", "2-UnitTests", "{B7F88E18-A554-4142-B64D-E82B5EDCA9A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubePuzzleLib.UnitTests", "CubePuzzleLib.UnitTests\CubePuzzleLib.UnitTests.csproj", "{767713A0-6465-48A8-8BD2-A220347E6901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CubePuzzleEditor.UnitTests", "CubePuzzleEditor.UnitTests\CubePuzzleEditor.UnitTests.csproj", "{8ACD57D0-FF04-4800-B177-F88850A44A75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +61,14 @@ Global
 		{F6C888D3-4CE8-DB9A-88BF-CD14131258FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6C888D3-4CE8-DB9A-88BF-CD14131258FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6C888D3-4CE8-DB9A-88BF-CD14131258FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767713A0-6465-48A8-8BD2-A220347E6901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767713A0-6465-48A8-8BD2-A220347E6901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767713A0-6465-48A8-8BD2-A220347E6901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767713A0-6465-48A8-8BD2-A220347E6901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACD57D0-FF04-4800-B177-F88850A44A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACD57D0-FF04-4800-B177-F88850A44A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACD57D0-FF04-4800-B177-F88850A44A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACD57D0-FF04-4800-B177-F88850A44A75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +81,8 @@ Global
 		{C87D3706-F674-4B93-8985-FCDBFB30E86A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F6C888D3-4CE8-DB9A-88BF-CD14131258FE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{473520F0-FA49-46C7-8C85-A13DF0434B36} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{767713A0-6465-48A8-8BD2-A220347E6901} = {B7F88E18-A554-4142-B64D-E82B5EDCA9A6}
+		{8ACD57D0-FF04-4800-B177-F88850A44A75} = {B7F88E18-A554-4142-B64D-E82B5EDCA9A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {67365147-70AD-46E2-B62F-98AEF751C054}
@@ -76,9 +92,15 @@ Global
 		..\DataLib\DataLib.Shared\DataLib.Shared.projitems*{473520f0-fa49-46c7-8c85-a13df0434b36}*SharedItemsImports = 13
 		CubePuzzleLib.Shared\CubePuzzleLib.Shared.projitems*{6528ccad-ef3d-4664-8a05-845acb15e124}*SharedItemsImports = 13
 		..\DataModelLib\DataModelLib.Shared\DataModelLib.Shared.projitems*{6effc2c5-b498-e4a9-55af-cca4812cae1e}*SharedItemsImports = 5
+		CubePuzzleLib.Shared\CubePuzzleLib.Shared.projitems*{767713a0-6465-48a8-8bd2-a220347e6901}*SharedItemsImports = 5
+		..\DataLib\DataLib.Shared\DataLib.Shared.projitems*{767713a0-6465-48a8-8bd2-a220347e6901}*SharedItemsImports = 5
+		..\DataModelLib\DataModelLib.Shared\DataModelLib.Shared.projitems*{767713a0-6465-48a8-8bd2-a220347e6901}*SharedItemsImports = 5
 		CubePuzzleLib.Shared\CubePuzzleLib.Shared.projitems*{7f4c1650-b607-4b94-a8c0-ae8f6a1fc799}*SharedItemsImports = 5
 		..\DataLib\DataLib.Shared\DataLib.Shared.projitems*{7f4c1650-b607-4b94-a8c0-ae8f6a1fc799}*SharedItemsImports = 5
 		..\DataModelLib\DataModelLib.Shared\DataModelLib.Shared.projitems*{7f4c1650-b607-4b94-a8c0-ae8f6a1fc799}*SharedItemsImports = 5
+		CubePuzzleLib.Shared\CubePuzzleLib.Shared.projitems*{8acd57d0-ff04-4800-b177-f88850a44a75}*SharedItemsImports = 5
+		..\DataModelLib\DataModelLib.Shared\DataModelLib.Shared.projitems*{8acd57d0-ff04-4800-b177-f88850a44a75}*SharedItemsImports = 5
+		..\DataViewModelLib\DataViewModelLib.Shared\DataViewModelLib.Shared.projitems*{8acd57d0-ff04-4800-b177-f88850a44a75}*SharedItemsImports = 5
 		CubePuzzleLib.Shared\CubePuzzleLib.Shared.projitems*{93714e43-0a2a-4dc1-8be5-9785f4d66ee9}*SharedItemsImports = 5
 		..\DataViewModelLib\DataViewModelLib.Shared\DataViewModelLib.Shared.projitems*{93714e43-0a2a-4dc1-8be5-9785f4d66ee9}*SharedItemsImports = 5
 		..\DataModelLib\DataModelLib.Shared\DataModelLib.Shared.projitems*{97ccac7f-660e-42f0-af29-16332fc30f7a}*SharedItemsImports = 13

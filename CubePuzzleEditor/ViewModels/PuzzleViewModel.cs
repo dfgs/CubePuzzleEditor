@@ -8,7 +8,7 @@ using DataViewModelLib;
 
 namespace CubePuzzleEditor.ViewModels
 {
-	[DatabaseViewModel, DTO("Puzzle"), Blueprint("DatabaseViewModel"), Blueprint("RelationViewModelCollection"), Using("CubePuzzleLib.Models")]
+	[DatabaseViewModel, DTO("Puzzle"), Blueprint("DatabaseViewModel"), Blueprint("RelationViewModelCollection"), Using("CubePuzzleLib.Models"), Using("CubePuzzleLib.Tables")]
 	public partial class PuzzleViewModel
 	{
 		
