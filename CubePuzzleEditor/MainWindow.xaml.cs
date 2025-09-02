@@ -19,6 +19,7 @@ namespace CubePuzzleEditor
         public MainWindow()
         {
             InitializeComponent();
-        }
+            DataContext = Data.CreatePuzzleViewModel();
+		}
     }
 }
